@@ -1,0 +1,29 @@
+main{
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+}
+.data-grid-wrapper{
+	flex-grow: 2;
+	margin: 32px;
+	border-radius: 6px;
+	background: linear-gradient(180deg, #EFF2FF -30.56%, rgba(232, 236, 255, 0) 135.85%);
+	padding: 48px 72px;
+}
+.top-menu-wrapper{
+	flex:0;
+}
+
+@media screen and (max-width: 992px)  {
+	.data-grid-wrapper{
+		padding: 16px 24px;
+	}
+}
+
+@media screen and (max-width: 600px)  {
+	.data-grid-wrapper{
+		padding: 8px 12px;
+		margin: 8px;
+	}
+}

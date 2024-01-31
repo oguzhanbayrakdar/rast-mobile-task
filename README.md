@@ -1,27 +1,47 @@
 # RastMobileTask
+Angular Version: 17.1.1
+Node Version: 18.19.0
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+1.Uygulamayı indirdikten sonra `npm i` komutuyla paketleri indirin.
+2.Ardından uygulama dizininde `ng serve` komutuyla uygulamayı çalıştırabilirsiniz.
+3.Uygulama `http://localhost:4200` adresinden yayınlanacaktır.  
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# Proje Dokümantasyonu
+Proje Adı: Rast Mobile Task 
+Bu doküman, Rast Mobile Task projesinin temel özelliklerini, kullanılan teknolojileri ve proje üzerinde çalışırken izlenen adımları göstermktedir.
 
-## Code scaffolding
+# İçindekiler
+**Proje Tanımı ve Amaçları**
+**Kullanılan Teknolojiler**
+**Proje Yapısı**
+**Responsive Tasarım**
+**Restful API Kuralları**
+**Yorumlar ve Açıklamalar**
+**Lokal Veri Saklama**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Proje Tanımı ve Amaçları
+Bu taskta bir firmanın sosyal medya hesaplarını kaydedebileceği bir datagrid/tablo uygulaması bulunmaktadır.
 
-## Build
+2. Kullanılan Teknolojiler
+Angular 17.1.1
+Node 18.19.0
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Proje Yapısı
+Proje, Angular framework'ü kullanılarak modüler bir yapıda geliştirilmiştir. Temel bileşenler şunlardır:
 
-## Running unit tests
+src/app/core/*: Angular bileşenleri burada bulunmaktadır.
+src/app/services/*: Servisler ve mock data burada bulunmaktadır.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+4. Responsive Tasarım
+Proje, kullanıcıya daha iyi bir deneyim sunabilmek için bilgisayar ve mobil cihazlara uygun olarak kodlanmıştır.
 
-## Running end-to-end tests
+5. Restful API Kuralları
+Proje, Restful API tasarım kurallarına dikkat edilerek geliştirilmiştir.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+6. Yorumlar ve Açıklamalar
+Karmaşık kod blokları ve önemli fonksiyonlar için açıklamalar ve yorumlar eklenmiştir. Bu sayede kodun anlaşılabilirliği artırılmıştır.
 
-## Further help
+7. Lokal Veri Saklama
+Kullanıcı her bağlandığında request atmaması için verilerin lokalde saklanması sağlanmıştır.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

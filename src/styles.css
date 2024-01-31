@@ -1,1 +1,177 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+	--primary: #744BFC;
+	--secondary:  #F5F7FF;
+	--white: white;
+	--danger: red;
+	--black: black;
+	--bg-white: #f1f4ff;
+}
+
+*{
+	font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+	background-color: var(--white);
+	border-radius: 29px;
+	padding: 12px;
+	border: none;
+	height: 42px;
+	font-weight: 500;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.btn-primary {
+	background-color: var(--primary);
+	color: var(--white);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.btn-secondary{
+	background-color: var(--secondary);
+	color: var(--primary)
+}
+
+
+/*DevExtreme Data Grid Styling*/
+.dx-widget{
+	font-family: 'Poppins', sans-serif!important;
+}
+.dx-datagrid-headers .dx-datagrid-action {
+	font-weight: 500;
+	color: var(--black);
+	font-size: 13px;
+}
+
+.dx-row td {
+	padding: 20px 44px !important;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.dx-datagrid-rowsview tbody tr:nth-child(even) {
+	background-color: #ffffff;
+	/* Çift sıralar için arka plan rengi */
+}
+
+.dx-datagrid-rowsview tbody tr:nth-child(odd) {
+	background-color: var(--bg-white);
+	/* Tek sıralar için arka plan rengi */
+}
+
+.dx-page-sizes:before {
+	content: "Show: ";
+	font-size: 12px;
+	color: var(--primary);
+	font-weight: 500;
+	margin-right: 16px;
+}
+
+.dx-page-sizes {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.dx-page-sizes .dx-selectbox.dx-textbox {
+	border-radius: 39px;
+	width: 85px !important;
+	border: 1px solid #CFC0FF;
+}
+
+.dx-page-sizes .dx-selectbox.dx-textbox .dx-texteditor-input-container {
+	width: 10px !important;
+	margin-left: 8px;
+	font-size: 10px;
+}
+
+.dx-page-sizes .dx-selectbox.dx-textbox .dx-texteditor-input-container::after {
+	content: 'rows'
+}
+
+.dx-item-content.dx-list-item-content::after {
+	content: ' rows'
+}
+
+.dx-dropdowneditor-icon::before, .dx-dropdowneditor-icon::after {
+  width: 7px;
+  height: 7px;
+  color: var(--primary);
+	font-size: 16px;
+	position: absolute;
+}
+
+.dx-dropdowneditor-icon::before{
+	content: '\25B2';
+	top: 8px;
+	left: 20px;
+
+}
+.dx-dropdowneditor-icon::after{
+	content: '\25BC';
+	top:12px;
+	left:11px;
+}
+.dx-widget.dx-button-normal.dx-dropdowneditor-button:hover{
+	border-radius: 39px;
+}
+.dx-button-disable.dx-navigate-button.dx-prev-button{
+	color: #C9C9C9;
+}
+
+.dx-pages-count{
+	color: var(--primary);
+}
+
+.dx-navigate-button.dx-next-button{
+	color: var(--primary);
+}
+.dx-page-indexes .dx-texteditor-input-container input{
+	border: 1px solid #EAEAEA;
+	border-radius: 4px;
+}
+/*Sorting colors*/
+.dx-sort.dx-sort-down:before {
+  color: #C0B8DC; 
+}
+
+.dx-sort.dx-sort-up:before {
+  color: var(--primary); 
+}
+
+/*Input Styles*/
+.input-group input{
+	height: 42px;
+	border-radius: 39px;
+	border: 1px solid #D9D9D9;
+	padding-left: 32px;
+}
+
+.input-group{
+	margin-bottom: 16px;
+}
+.input-group label{
+	margin-left: 5px;
+	margin-bottom: 5px;
+	font-size: 13px;
+	font-weight: 500;
+}
+@media screen and (max-width: 900px)  {
+	.dx-row td {
+		padding: 8px 16px !important;
+		font-size: 12px;
+		font-weight: 400;
+	}
+}
+@media screen and (max-width: 600px)  {
+	.dx-row td {
+		padding: 4px 8px !important;
+		font-size: 12px;
+		font-weight: 400;
+	}
+}

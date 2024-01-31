@@ -1,0 +1,42 @@
+<div class="modal-bg" *ngIf="_showModal.value">
+	<div class="modal">
+		<div class="header">
+			<button class="btn btn-icon" (click)="closeModal()">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M18 6L6 18" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+					<path d="M6 6L18 18" stroke="#33363F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+				</svg>
+	
+			</button>
+		</div>
+		<div class="content">
+			<form [formGroup]="socialMediaForm">
+	
+				<div class="input-group">
+					<label for="name">
+						Sosyal Medya Linki
+						<span class="required-error" *ngIf="socialMediaForm.get('url')?.invalid && socialMediaForm.get('url')?.dirty">*Gerekli Alan</span>
+					</label>
+					<input type="text" formControlName="url">
+				</div>
+				<div class="input-group">
+					<label for="name">
+						Sosyal Medya Adı
+						<span class="required-error" *ngIf="socialMediaForm.get('name')?.invalid && socialMediaForm.get('name')?.dirty">*Gerekli Alan</span>
+					</label>
+					<input type="text" formControlName="name">
+				</div>
+				<div class="input-group">
+					<label for="name">Açıklama
+						<span class="required-error" *ngIf="socialMediaForm.get('description')?.invalid && socialMediaForm.get('description')?.dirty">*Gerekli Alan</span>
+					</label>
+					<input type="text" formControlName="description">
+				</div>
+			</form>
+		</div>
+		<div class="footer">
+			<button class="btn btn-secondary" (click)="closeModal()">Vazgeç</button>
+			<button class="btn btn-primary" (click)="saveForm()">Kaydet</button>
+		</div>
+	</div>
+</div>
